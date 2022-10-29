@@ -25,30 +25,18 @@ double kl=0, result=0;
 int menu()
 {
 	int ch;
-	cout<<"\n1.  Addition";
-	cout<<"\n2.  Subtraction";
-	cout<<"\n3.  Multiplication";
-	cout<<"\n4.  Division";
-	cout<<"\n5.  Remainder";
-	cout<<"\n6.  Factorial";
-	cout<<"\n7.  Sine";
-	cout<<"\n8.  Cosine";
-	cout<<"\n9.  Tangent";
-	cout<<"\n10. log(base e)";
-	cout<<"\n11. log(base 10)";
-	cout<<"\n12. e^x";
-	cout<<"\n13. SquareRoot";
-	cout<<"\n14. CubeRoot";
-	cout<<"\n15. Power";
-	cout<<"\n16. Absolute Value";
-	cout<<"\n17. Sine Inverse";
-	cout<<"\n18. Cosine Inverse";
-	cout<<"\n19. Tangent Inverse";
-	cout<<"\n20. Ceil Function";
-	cout<<"\n21. Floor Function";
-	cout<<"\n22. Permutation (nPr)";
-	cout<<"\n23. Combination (nCr)";
-	cout<<"\n24. Clear";
+	cout<<"\n1.  Addition"<<"\t\t\t\t\t\t\t13. SquareRoot" ;
+	cout<<"\n2.  Subtraction"<<" \t\t\t\t\t\t14. CubeRoot";
+	cout<<"\n3.  Multiplication"<<"\t\t\t\t\t\t15. Power";
+	cout<<"\n4.  Division"<<"\t\t\t\t\t\t\t16. Absolute Value";
+	cout<<"\n5.  Remainder"<<" \t\t\t\t\t\t\t17. Sine Inverse";
+	cout<<"\n6.  Factorial"<<" \t\t\t\t\t\t\t18. Cosine Inverse";
+	cout<<"\n7.  Sine"<<"\t\t\t\t\t\t\t19. Tangent Inverse";
+	cout<<"\n8.  Cosine"<<"\t\t\t\t\t\t\t20. Ceil Function";
+	cout<<"\n9.  Tangent"<<" \t\t\t\t\t\t\t21. Floor Function";
+	cout<<"\n10. log(base e)"<<" \t\t\t\t\t\t22. Permutation (nPr)";
+	cout<<"\n11. log(base 10)"<<"  \t\t\t\t\t\t23. Combination(nCr)";
+	cout<<"\n12. e^x"<<" \t\t\t\t\t\t\t24. Clear";
 	cout<<"\n25. Exit";
 	cout<<endl<<endl<<"Enter your choice: ";
 
@@ -445,7 +433,7 @@ void loading()
 void tfunc( )
 {
 	time_t T = time(NULL);
-	cout<<"\n\t\tCurrent Date and Time: "<<ctime(&T);
+	cout<<"\n\n\n\t\tCurrent Date and Time: "<<ctime(&T);
 }
 
 class Cal
@@ -592,7 +580,7 @@ void Calender()
 		cout<<"\n\t\t\tWelcome to the Calender Section."<<endl;
 		cout<<"\t\t\t________________________________";
 		tfunc();
-		cout<<"\n\n\n\n\n\n\t\t\t1. Upcoming Birthdays ";
+		cout<<"\n\n\t\t\t1. Upcoming Birthdays ";
 		cout<<"\n\t\t\t2. Upcoming Events ";
 		cout<<"\n\t\t\t3. Go back to Main Menu ";
 		cout<<"\n\n\t\t\tEnter your choice(1-3): ";
@@ -1037,7 +1025,7 @@ int schedule()
 	char x,ch;
 	while(ch!='n')
 	{
-		cout<<"\n\n\n\n\n\n\t\t\tYou are now in the Schedule Section.\n\n";
+		cout<<"\n\n\t\tYou are now in the Schedule Section.\n\n";
 		cout<<"\n\t\t\t1.My Meetings";
 		cout<<"\n\t\t\t2.My Travels";
 		cout<<"\n\t\t\t3.Return to Main Menu";
@@ -1066,7 +1054,7 @@ int schedule()
 		{
 			beg:
 			;
-			cout<<"\n\n\t\t\tWant to return to Schedule Section??(y/n):";
+			cout<<"\n\n\t\tWant to return to Schedule Section??(y/n):";
 			cin>>ch;
 			if(ch!='y'&&ch!='n')
 			{
@@ -1085,7 +1073,7 @@ int meetings()
 {
 	system("CLS");
 	char y;
-	cout<<"\n\n\n\n\n\n\t\t\t1. View meetings: ";
+	cout<<"\n\n\t\t\t1. View meetings: ";
 	cout<<"\n\t\t\t2. Add meetings: ";
 	cout<<"\n\t\t\t3. Delete meetings: ";
 	repeat:
@@ -1266,7 +1254,7 @@ int travels()
 {
 	system("CLS");
 	char z;
-	cout<<"\n\n\n\n\n\n\t\t\t1. View travels: ";
+	cout<<"\n\n\t\t\t1. View travels: ";
 	cout<<"\n\t\t\t2. Add travels: ";
 	cout<<"\n\t\t\t3. Delete travels: ";
 	travrep:
@@ -1451,7 +1439,7 @@ int any(int n)
 
 char *quotes(int n)
 { 
-	char *quotes[]={"Fight for what you have\nFight for what you want\nWin for what you can't\nLose for what you can", "Being straightforward,\nis not being rude.\nBeing straightforward,\nis being you.", "Happiness,\nnot everyone can have it\nnot everyone can grab it\nnot everyone can sort it\nnot everyone can give it!!", "Sometimes it's life that let's u go away,\nSometimes it's you that let's you fade away......", "It's hard to let go\nAnd its harder to hold on\nBut sometimes you just gotta move on..", "Never make promises, you can't keep \nCause sometimes they just become words,\nEasier to speak but harder to keep....", "No matter how much, sometimes\nthe scent, the silence and the scene never gets too old....."};
+	char *quotes[]={"\t\tFight for what you have\n\t\tFight for what you want\n\t\tWin for what you can't\n\t\tLose for what you can", "\t\tBeing straightforward,\n\t\tis not being rude.\n\t\tBeing straightforward,\n\t\tis just being you.", "\t\tHappiness,\n\t\tnot everyone can have it\n\t\tnot everyone can grab it\n\t\tnot everyone can sort it\n\t\tnot everyone can give it!!", "\t\tSometimes it's life that let's u go away,\n\t\tSometimes it's you that let's you fade away......", "\t\tIt's hard to let go\n\t\tAnd its harder to hold on\n\t\tBut sometimes you just gotta move on..", "\t\tNever make promises, you can't keep \n\t\tCause sometimes they just become words,\n\t\tEasier to speak but harder to keep....", "\t\tNo matter how much, sometimes\n\t\tthe scent, the silence and the scene never gets too old....."};
 	char *t;
 	t=quotes[n];
 	return t;
@@ -1459,7 +1447,7 @@ char *quotes(int n)
 
 char *jokes(int n)
 { 
-	char *jokes[]={"Did you hear about the actor who fell through the floorboards?- He was just going through a stage.","Why don't scientists trust atoms?- Because they make up everything.","Why did the yogurt go to the art exhibition?- Because it was cultured","Why did the Oreo go to the dentist?- Because he lost his filling.","What do you get from a pampered cow?- Spoiled milk.","What's a computer's favourite song??-An Algo-rhythm"};
+	char *jokes[]={"Did you hear about the actor who fell through the floorboards?- He was just going through a stage.","Why don't scientists trust atoms?- Because they make up everything.","Why did the yogurt go to the art exhibition?- Because it was cultured","Why did the Oreo go to the dentist?- Because he lost his filling.","\tWhat do you get from a pampered cow?- Spoiled milk.","What's a computer's favourite song??-An Algo-rhythm"};
 	char *j;
 	j=jokes[n];
 	return j;
@@ -1467,7 +1455,7 @@ char *jokes(int n)
 
 char *gk(int n)
 { 
-	char *gk[]={"In 2015,the UK became the first nation to allow the creation of babies from the DNA of three people.","In 2013, US Airways group and AMR cooperation mearged to become the worlds largest airline.","Mumbai is the largest city with a population of over 1 crore people.","'Hobby horse' was the name of the bicycle wich was the first mass produced item.","Kazakisthan is the largest land locked country."};
+	char *gk[]={"\t\tIn 2015,the UK became the first nation to allow the creation of babies from the DNA of three people.","In 2013, US Airways group and AMR cooperation mearged to become the worlds largest airline.","Mumbai is the largest city with a population of over 1 crore people.","'Hobby horse' was the name of the bicycle wich was the first mass produced item.","Kazakisthan is the largest land locked country."};
 	char *g;
 	g=gk[n];
 	return g;
@@ -1492,8 +1480,8 @@ int randomfun()
 		a:
 		;
 		system("CLS");
-		cout<<"\n\t\tYour entertainment is here";
-		cout<<"\n\n\n\t\t1. Roll a dice , see what u get!!!";
+		cout<<"\n\t\tYour personal entertainment";
+		cout<<"\n\n\t\t1. Roll a dice , see what u get!!!";
 		cout<<"\n\t\t2. Wanna get motivated?? Read a few quotes.";
 		cout<<"\n\t\t3. Sit back and laugh!! Jokes ahead !!";
 		cout<<"\n\t\t4. Add something to your general knowledge";
@@ -1505,7 +1493,7 @@ int randomfun()
 		{ 
 			case '1' :
 				system("CLS");
-				cout<<"\n\n\n\n\n\n\t\t";
+				cout<<"\n\n\n\t\t";
 				cout<<"\n\t\t___________________________________________";
 				cout<<"\n\n\t\tAnd the number on your dice is.. ";
 				n=dice(n);
@@ -1514,14 +1502,14 @@ int randomfun()
 					n=1;
 				}
 				cout<<n;
-				cout<<"\n\t___________________________________________";
+				cout<<"\n\t\t___________________________________________";
 				break;
 	
 			case '2' :
 				system("CLS");
-				cout<<"\n\n\n\n\n\n\t\t";
-				cout<<"\n\t\t___________________________________________";
-				cout<<"\n\t\t\n lets get motivated...\n\n";
+				cout<<"\n\n\t\t";
+				cout<<"\n\t___________________________________________";
+				cout<<"\n\t\t\n\t\t lets get motivated...\n\n";
 				n=any(n);
 				ptr=quotes(n);
 				if(n==0)
@@ -1534,7 +1522,7 @@ int randomfun()
 
 			case '3' :
 				system("CLS");
-				cout<<"\n\n\n\n\n\n\t\t";
+				cout<<"\n\n\t\t";
 				cout<<"\n\t\t__________________________________________";
 				cout<<"\n\n\t\t Ready for a laugh...!!!\n\n";
 				n=any(n);
@@ -1549,7 +1537,7 @@ int randomfun()
 
 			case '4' :
 				system("CLS");
-				cout<<"\n\n\n\n\n\n\t\t";
+				cout<<"\n\n\n\t\t";
 				cout<<"\n\t\t___________________________________________";
 				cout<<"\n\n\t\t Did you know????\n\n";
 				n=any(n);
@@ -1559,7 +1547,7 @@ int randomfun()
 					n=1;
 				}
 				cout<<"\n\n\t"<<ptr;
-				cout<<"\n\t___________________________________________";
+				cout<<"\n\t\t___________________________________________";
 				break;
 
 			case '5' :
